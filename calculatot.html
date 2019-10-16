@@ -5,56 +5,59 @@
     <body>
         <div class="container" >
            
-                <div class="result" >0</div>
+                <div class="result">
+                        <input type="text" class="InputF" id="InputF" >
+                </div>
 
                     
             <table >
 
                 <tr>
-                        <td><input class="up3" type="button"  onclick="" value="AC"></td>
-                        <td><input class="up3" type="button"  onclick="" value="+/-"></td>
-                        <td><input class="up3" type="button"  onclick="" value="%"></td>
-                        <td><input class="icon" type="button" onclick=""  value="÷"></td>
+                        <td><input class="up3" type="button"  onclick="clr()" value="AC" ></td>
+                        <td><input class="up3" type="button"  onclick="opposite()" value="+/-"></td>
+                        <td><input class="up3" type="button"  onclick="dis('%')" value="%"></td>
+                        <td><input class="icon" type="button" onclick="dis('/')"  value="÷"></td>
                       
                 </tr>
                 
                 <tr>
-                        <td><input class="button" type="button" onclick="" value="7"></td>
-                        <td><input class="button" type="button" onclick="" value="8"></td>
-                        <td><input class="button" type="button" onclick="" value="9"></td>
-                        <td><input class="icon" type="button"   onclick="" value="X"></td>
+                        <td><input class="button" type="button" onclick="dis('7')" value="7"></td>
+                        <td><input class="button" type="button" onclick="dis('8')" value="8"></td>
+                        <td><input class="button" type="button" onclick="dis('9')" value="9"></td>
+                        <td><input class="icon" type="button"   onclick="dis('*')" value="X"></td>
                       
                 </tr>
                 
                 <tr>
-                        <td><input class="button" type="button" onclick="" value="4"></td>
-                        <td><input class="button" type="button" onclick="" value="5"></td>
-                        <td><input class="button" type="button" onclick="" value="6"></td>
-                        <td><input class="icon" type="button"   onclick="" value="-"></td>
+                        <td><input class="button" type="button" onclick="dis('4')" value="4"></td>
+                        <td><input class="button" type="button" onclick="dis('5')" value="5"></td>
+                        <td><input class="button" type="button" onclick="dis('6')" value="6"></td>
+                        <td><input class="icon" type="button"   onclick="dis('-')" value="-"></td>
                       
                 </tr>
                 
                 <tr>
-                        <td><input class="button" type="button" onclick="" value="1"></td>
-                        <td><input class="button" type="button" onclick="" value="2"></td>
-                        <td><input class="button" type="button" onclick="" value="3"></td>
-                        <td><input class="icon" type="button"   onclick="" value="+"></td>
+                        <td><input class="button" type="button" onclick="dis('1')" value="1"></td>
+                        <td><input class="button" type="button" onclick="dis('2')" value="2"></td>
+                        <td><input class="button" type="button" onclick="dis('3')" value="3"></td>
+                        <td><input class="icon" type="button"   onclick="dis('+')" value="+"></td>
                       
                 </tr>
-                
-                <tr>
-                        <td><input class="button" type="button" onclick="" value="0"></td>
-                        <td><input class="button" type="button" onclick="" value="0"></td>
-                        <td><input class="button" type="button" onclick="" value="."></td>
-                        <td><input class="icon" type="button"   onclick="" value="="></td>
-                      
-                </tr>
-             
             </table>
+            <div class="down" >
+                          <input class="zero" class="button" type="button" onclick="dis('0')" value="0">
+                          <input class="button" type="button" onclick="dis('.')" value=".">
+                          <input class="button" type="button" onclick="solve()" value="=">
+                         
 
+                          
+            </div>
         </div>
-        <script>
-                
+        <script src="calcu.js">
+           
+         
+
+
         </script>
     </body>
 </html>
